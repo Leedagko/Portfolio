@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #191919;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+pre{
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+a, p{
+    text-decoration: none;
+    color: #fff;
+}
+ul,li{
+    list-style: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  width: 100%; 
+}
+.title_50{
+    font-size: 3.125rem;
+    color: #fff;
+}
+.title_36{
+    font-size: 2.25rem;
+    color: #fff;
+}
+.text_28{
+    font-size: 1.75rem;
+    color: #fff;
+}
+.text_24{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.text_20{
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 300;
+}
+.text_16{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 300;
+}
+.text_14{
+    font-size: 0.875rem;
+    color: #fff;
+    font-weight: 300;
+}

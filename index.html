@@ -1,11 +1,738 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>251112_평가</title>
+    <title>LeeDaKyo</title>
+    <link rel="stylesheet" href="./css/com_st.css">
+    <link rel="stylesheet" href="./css/pc_1720.css">
+    <link rel="stylesheet" href="./css/mi_1719_1098.css">
+    <link rel="stylesheet" href="./css/mo_1097.css">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <link rel="pconnect" href="https://fonts.googleapis.com">
+    <link rel="pconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>251112_평가</h1>
+    <div class="wrap">
+        <!-- 메뉴바 영역 -->
+        <nav class="menu_wrap">
+            <input type="checkbox" id="toggle_menu">
+            <label for="toggle_menu" class="toggle_open">
+                <span class="text_24">MENU</span>
+                <div class="img_box">
+                    <img src="./img/menu_icon.png" alt="메뉴바오픈">
+                </div>
+            </label>
+            <label for="toggle_menu" class="close_but">
+                <div class="close_box">
+                    <span class="text_24">CLOSE</span>
+                    <div class="img_box">
+                        <img src="./img/menu_icon.png" alt="메뉴바닫기">
+                    </div>
+                </div>
+            </label>
+            <div class="menu_in_box">
+                <ul class="top_menu">
+                    <li class="sub_menu">
+                        <a href="#blackhole_main">Main</a>
+                    </li>
+                    <li class="sub_menu">
+                        <a href="#about_page">About</a>
+                    </li>
+                    <li class="sub_menu">
+                        <a href="#ski_tool_page">Skill&Tool</a>
+                    </li>
+                    <li class="sub_menu">
+                        <a href="#project_te_page">Team Project</a>
+                    </li>
+                    <li class="sub_menu">
+                        <a href="#project_cr_page">Career Project</a>
+                    </li>
+                    <li class="sub_menu">
+                        <a href="#contact_page">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 메인배너 영역 -->
+        <div class="page main_page">
+            <div class="width_align main_banner_page" id="blackhole_main">
+                <canvas id="canvas"></canvas>
+                <div class="can_center can_hover">
+                    <span class="text_24 neme_feda">이다교</span>
+                    <span class="text_24 neme_feda_mo">Click</span>
+                </div>
+                <span class="text_24 neme_feda_click">
+                    “ 아이디어와 기술을 끌어당겨<br>
+                    새로운 가치를 만들어내는 개발자,<br>
+                    <b class="name_event">이다교</b> 입니다. ”
+                </span>
+            </div>
+            <script src="./js/main_banner.js"></script>
+        </div>
+
+        <!-- 자기 소개 영역 -->
+        <section class="page about_page scroll_page" id="about_page">
+            <article class="width_align your_box in_page">
+                <div class="yor_left_box">
+                    <div class="yor_img_box">
+                        <img src="./img/mr_img.png" alt="이다교프로필이미지">
+                    </div>
+                    <div class="text_sub_box">
+                        <div class="text_more">
+                            <h3 class="title_36">이다교</h3>
+                            <h2 class="title_50">Lee Da Kyo</h2>
+                        </div>
+                        <div class="perso">
+                            <h4 class="text_28">2000.04.29.</h4>
+                            <span class="line_bar"></span>
+                            <h4 class="text_28">부산 연제구</h4>
+                        </div>
+                        <div class="you_more_wrap">
+                            <div class="more_box">
+                                <p class="text_16">#사명감</p>
+                            </div>
+                            <div class="more_box">
+                                <p class="text_16">#리더쉽</p>
+                            </div>
+                            <div class="more_box">
+                                <p class="text_16">#효율적</p>
+                            </div>
+                            <div class="more_box">
+                                <p class="text_16">#친화력</p>
+                            </div>
+                            <div class="more_box">
+                                <p class="text_16">#협동력</p>
+                            </div>
+                            <div class="more_box">
+                                <p class="text_16">#행동력</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="yor_right_box">
+                    <div class="yor_ed_ce_box">
+                        <div class="educa_box">
+                            <h4 class="text_28">EDUCATION</h4>
+                            <p class="text_24">19.02.&nbsp;&nbsp;성광여자고등학교 졸업</p>
+                            <p class="text_24">22.02.&nbsp;&nbsp;부산경상대학교 IT·콘텐츠계열 디지털디자인전공 졸업</p>
+                        </div>
+                        <div class="cerri_box">
+                            <h4 class="text_28">CERTIFICATE</h4>
+                            <p class="text_24">20.12.&nbsp;&nbsp;GTQ 그래픽기술자격 포토샵 1급</p>
+                            <p class="text_24">19.06.&nbsp;&nbsp;GTQ 그래픽기술자격 일러스트 2급</p>
+                            <p class="text_24">19.02.&nbsp;&nbsp;자동자운전면허 2종 보통</p>
+                        </div>
+                    </div>
+                    <div class="car_box">
+                        <h4 class="text_28">CAREER</h4>
+                            <div class="text_reg">
+                                <p class="text_24">21.09~22.12&nbsp;&nbsp;주식회사 코너스튜디오 <span class="text_event">웹퍼블리셔 및 편집 디자인</span> 담당 (1년 3개월)</p>
+                                <p class="text_24">23.01~25.02&nbsp;&nbsp;부산경상대학교 HiVE센터 행정(학과) 부서 (2년 2개월)</p>
+                                <p class="text_20">- 담당 업무 : HiVE센터 학과 <span class="text_event te_20">사이트 유지보수 및 웹 퍼블리셔</span> 담당, HiVE센터 및 학과 행정업무 담당</p>
+                            </div>
+                            <p class="text_24">25.05~25.11&nbsp;&nbsp;[스마트웹&콘텐츠개발]UI/UX & 프론트엔드 (반응형웹, 피그마, 리엑트,SQL) 개발자 양성 과정 수료</p>
+                        </div>
+                        <div class="awar_box">
+                            <h4 class="text_28">AWARED</h4>
+                            <div class="awar_align">
+                                <p class="text_24">19.09.15&nbsp;&nbsp;제 48회 전국대학생디자인대전 캐릭터디자인 입선</p>
+                                <p class="text_24">20.09.17&nbsp;&nbsp;BSKS 창업동아리 경진 대회 동아리 ‘단풍잎’ 대표 은상</p>
+                                <p class="text_24">20.12.29&nbsp;&nbsp;부산 애니메이션 캐릭터 IP활용 공모전 아이디어 상품 분야 동상</p>
+                                <p class="text_24">20.03~21.02&nbsp;&nbsp;부산경상대학교 IT·콘텐츠계열 학회장</p>
+                                <p class="text_24">21.03~22.02&nbsp;&nbsp;부산경상대학교 제 42회 “한울” 총학생회 부총학생회장</p>
+                            </div>
+                        </div>
+                    </div>
+            </article>
+        </section>
+
+        <!-- 스킬 및 툴 안내 영역 -->
+        <section class="page ski_tool_page scroll_page" id="ski_tool_page">
+            <article class="width_align in_page">
+                <div class="ski_box">
+                    <div class="ski_top_box">
+                        <h2 class="title_50 le_to_cen">“ 기술의 중심에서 가치를 재탄생시키는 ”</h2>
+                        <h2 class="title_50 rig_to_cen">“ 프론트엔드 개발자, <span class="text_bool">이다교</span>입니다. ”</h2>
+                    </div>
+                    <div class="ski_down_box">
+                        <div class="sk_to_box bown_top">
+                            <h3 class="title_36">Skill</h3>
+                            <div class="icon_box_wrap">
+                                <div class="icon_box icon_1">
+                                    <img src="./img/skill_icon/HTML.svg" alt="html:5">
+                                </div>
+                                <div class="icon_box icon_2">
+                                    <img src="./img/skill_icon/CSS.svg" alt="css">
+                                </div>
+                                <div class="icon_box icon_3">
+                                    <img src="./img/skill_icon/JavaScript.svg" alt="JavaScript">
+                                </div>
+                                <div class="icon_box icon_4">
+                                    <img src="./img/skill_icon/JQuery.svg" alt="JQuery">
+                                </div>
+                                <div class="icon_box icon_5">
+                                    <img src="./img/skill_icon/swiper-logo.svg" alt="swiper">
+                                </div>
+                                <div class="icon_box icon_6">
+                                    <img src="./img/skill_icon/Bootstrap.svg" alt="Bootstrap">
+                                </div>
+                                <div class="icon_box icon_7">
+                                    <img src="./img/skill_icon/React.svg" alt="React">
+                                </div>
+                                <div class="icon_box icon_8">
+                                    <img src="./img/skill_icon/MySQL-Light.svg" alt="MySQL">
+                                </div>
+                                <div class="icon_box icon_9">
+                                    <img src="./img/skill_icon/NodeJS.svg" alt="Node">
+                                </div>
+                                <!-- <div class="icon_box icon_10">
+                                    <img src="./img/skill_icon/PHP-Light.svg" alt="PHP">
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="sk_to_box bown_top">
+                            <h3 class="title_36">Tools</h3>
+                            <div class="icon_box_wrap">
+                                <div class="icon_box icon_1">
+                                    <img src="./img/skill_icon/Figma.svg" alt="Figma">
+                                </div>
+                                <div class="icon_box icon_2">
+                                    <img src="./img/skill_icon/Photoshop.svg" alt="Photoshop">
+                                </div>
+                                <div class="icon_box icon_3">
+                                    <img src="./img/skill_icon/Illustrator.svg" alt="Illustrator">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- 프로젝트 진행 소개 영역 - 팀프로젝트 -->
+        <section class="page scroll_page project_te_page" id="project_te_page">
+            <article class="width_align pro_te_box in_page">
+                <div class="pro_full_mask mask_te">
+                    <div class="pro_move_box move_te">
+                        <div class="pro_smi_box smi_te">
+                            <div class="pro_left_box">
+                                <div class="left_title_box">
+                                    <h3 class="title_36">
+                                        <b class="point_blue">2025</b> Work<br>
+                                        Team Project
+                                    </h3>
+                                </div>
+                                <h3 class="title_36 title_reg">
+                                    Responsive<br>
+                                    Website 
+                                </h3>
+                                <p class="text_20 pc_nun">(01/03)</p>
+                            </div>
+                            <div class="pro_certer_box">
+                                <h2 class="title_50">
+                                    학습 오디오북 어플<br>
+                                    'Monggle'
+                                </h2>
+                                <div class="mo_pro_ali">
+                                    <p class="text_20 ailgn">
+                                        반응형 웹사이트<br>
+                                        사용 스킬 : HTML:5, CSS3, javescript(ES6+)<br>
+                                        제작 기간 : 한달 (2025.10.01.~10.31.)<br>
+                                        제작 인원 : 4명<br>
+                                        작업 파트 : 기획 80%, 디자인 80%, 코드 100%
+                                    </p>
+                                    <div class="mo_flex">
+                                        <p class="text_20">
+                                            연령대별 최적화된 맞춤형 오디오 콘텐츠를 통한 교육 및<br>
+                                            정보들을 시·청각적으로 쉽게 탐색하고 즐길 수 있는 UX 구현
+                                        </p>
+                                        <div class="but_wrap">
+                                            <button class="but plan_but prepbut" onclick="window.open('#','_self')">기획서</button>
+                                            <button class="but skill_but prepbut" onclick="window.open('#','_self')">기술서</button>
+                                            <button class="but web_but" onclick="cli_web_ex()">웹사이트</button>
+                                        </div>
+                                        <p class="text_20 mo_nun">(01/03)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pro_right_box">
+                                <img src="./img/Monggle.png" alt="몽글 메인화면" id="mo_00_img">
+                            </div>
+                        </div>
+                        <div class="pro_smi_box smi_te">
+                            <div class="pro_left_box">
+                                <div class="left_title_box">
+                                    <h3 class="title_36">
+                                        <b class="point_blue">2025</b> Work<br>
+                                        Team Project
+                                    </h3>
+                                </div>
+                                <h3 class="title_36 title_reg">
+                                    Responsive<br>
+                                    Website
+                                </h3>
+                                <p class="text_20 pc_nun">(02/03)</p>
+                            </div>
+                            <div class="pro_certer_box">
+                                <h2 class="title_50">
+                                    Audi 코리아<br>
+                                    공식 홈페이지 리뉴얼
+                                </h2>
+                                <div class="mo_pro_ali">
+                                    <p class="text_20 ailgn">
+                                        반응형 웹사이트<br>
+                                        사용 스킬 : HTML:5, CSS3, javescript(ES6+), jquery<br>
+                                        제작 기간 : 5일 (25.08~25.08)<br>
+                                        제작 인원 : 4명<br>
+                                        작업 파트 : (조장 담당) 기획 70%, 디자인 50%, 코드 100%
+                                    </p>
+                                    <div class="mo_wrap">
+                                        <p class="text_20 pc_text">
+                                            과도한 시각 중심 구성과 아우디의 핵심 브랜드 디지털 접점의<br>
+                                            한계점을 변경하고자 아우디공식코리아(한국) 사이트 리뉴얼 진행. 
+                                        </p>
+                                        <p class="text_20 mo_text">
+                                            아우디의 핵심 디지털 접점을 변경하고자 아우디공식코리아(한국) 사이트 리뉴얼 진행. 
+                                        </p>
+                                        <div class="but_wrap">
+                                            <button class="but plan_but prepbut" onclick="window.open('#','_self')">기획서</button>
+                                            <button class="but skill_but prepbut" onclick="window.open('#','_self')">기술서</button>
+                                            <button class="but web_but" onclick="cli_web_aubi()">웹사이트</button>
+                                        </div>
+                                        <p class="text_20 mo_nun">(02/03)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pro_right_box">
+                                <img src="./img/audi.png" alt="아우디 메인화면" id="mo_audi_img">
+                            </div>
+                        </div>
+                        <div class="pro_smi_box smi_te">
+                            <div class="pro_left_box">
+                                <div class="left_title_box">
+                                    <h3 class="title_36">
+                                        <b class="point_blue">2025</b> Work<br>
+                                        Team Project
+                                    </h3>
+                                </div>
+                                <h3 class="title_36 title_reg">
+                                    Mobile
+                                </h3>
+                                <p class="text_20 pc_nun">(03/03)</p>
+                            </div>
+                            <div class="pro_certer_box">
+                                <h2 class="title_50">
+                                    스마트문화유산앱<br>
+                                    “Hi Busan”
+                                </h2>
+                                <div class="mo_pro_ali">
+                                    <p class="text_20 ailgn">
+                                        반응형 웹사이트<br>
+                                        사용 스킬 : HTML:5, CSS3, javescript(ES6+), jquery<br>
+                                        제작 기간 : 4일(25.06 ~ 25.06)<br>
+                                        제작 인원 : 4명<br>
+                                        작업 파트 : (조장 담당) 기획 60%, 디자인 40%, 코드 100%
+                                    </p>
+                                    <div class="mo_wrap">
+                                        <p class="text_20 pc_text">
+                                            ‘부산의 문화유산’ 을 모바일 버전으로 쉽게 찾아보고 즐길 수 있고,<br>
+                                            문화유산 뿐만이 아니라, 부산의 대한 먹거리, 놀거리 등의 대한<br>
+                                            정보를 접할 수 있도록 사이트 제작.
+                                        </p>
+                                        <p class="text_20 mo_text">
+                                            '부산의 문화유산'과 먹거리·놀거리 정보를 모바일에서 쉽게 즐길 수 있는 사이트 제작.
+                                        </p>
+                                        <div class="but_wrap">
+                                            <button class="but plan_but" onclick="window.open('./pdf/Hi_Busan_plan.pdf','_blank')">기획서</button>
+                                            <button class="but skill_but" onclick="window.open('./pdf/Hi_Busan_technology.pdf','_blank')">기술서</button>
+                                            <button class="but web_but" onclick="cli_web_hi()">웹사이트</button>
+                                        </div>
+                                        <p class="text_20 mo_nun">(03/03)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pro_right_box mo_con">
+                                <img src="./img/hibusan.png" alt="하이부산 메인화면">
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </article>
+            <button class="move_but left_but te_but te_le">
+                <img src="./img/left_but.png" alt="왼쪽이동버튼">
+            </button>
+            <button class="move_but right_but te_but te_rig">
+                <img src="./img/right_but.png" alt="오른쪽이동버튼">
+            </button>
+        </section>
+        
+        <!-- 프로젝트 진행 소개 영역 - 커리어 프로젝트 -->
+        <section class="page project_cr_page scroll_page" id="project_cr_page">
+            <article class="width_align pro_cr_box in_page">
+                <div class="pro_full_mask mask_cr">
+                    <div class="pro_move_box move_cr">
+                        <!-- 경웹페 작업 영역 -->
+                        <div class="pro_smi_box smi_cr">
+                            <div class="pro_left_box">
+                                <div class="left_title_box">
+                                    <h3 class="title_36">
+                                        <b class="point_blue">2022</b> Work<br>
+                                        Career Project
+                                    </h3>
+                                </div>
+                                <h3 class="title_36 title_reg">
+                                    Responsive<br>
+                                    Website
+                                </h3>
+                                <p class="text_20 pc_nun">(01/06)</p>
+                            </div>
+                            <div class="pro_certer_box">
+                                <h2 class="title_50">
+                                    부산경상대학교 웹툰학과<br>
+                                    ‘웹툰소개’ 페이지 제작
+                                </h2>
+                                <div class="mo_pro_ali">
+                                    <p class="text_20 ailgn">
+                                        반응형 웹사이트<br>
+                                        사용 스킬 : HTML:5, CSS3, Bootstrap<br>
+                                        제작 기간 : 5일 (2021.10.02~10.07)<br>
+                                        제작 인원 : 2명<br>
+                                        담당 파트 : 사이트 구조 설계 및 사이트 구축
+                                    </p>
+                                    <div class="mo_wrap">
+                                        <p class="text_20 pc_text">
+                                            부산경상대학교 디지털문화콘텐츠과의 2021 경기국제웹툰페어<br>
+                                            참가를 위한 재학생 웹툰 소개 안내 반응형 웹사이트 제작.
+                                        </p>
+                                        <p class="text_20 mo_text">
+                                            부산경상대학교 디지털문화콘텐츠과 2021 웹툰 소개 반응형 웹사이트 제작.
+                                        </p>
+                                        <div class="but_wrap">
+                                            <button class="but ski_but prepbut" onclick="window.open('#','_self')">기술서</button>
+                                            <button class="but exi_but" onclick="window.open('./img/webtoon_Existing.png','_blank')">기존사이트</button>
+                                            <button class="but web_but" onclick="cli_web_web()">리뉴얼사이트</button>
+                                        </div>
+                                        <p class="text_20 mo_nun">(01/06)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pro_right_box">
+                                <img src="./img/webtoon_1.PNG" alt="부산경상대 웹툰소개 메인화면" id="mo_web_img">
+                            </div>
+                        </div>
+
+                        <!-- 창신대 작업 영역 -->
+                        <div class="pro_smi_box smi_cr">
+                            <div class="pro_left_box">
+                                <div class="left_title_box">
+                                    <h3 class="title_36">
+                                        <b class="point_blue">2022</b> Work<br>
+                                        Career Project
+                                    </h3>
+                                </div>
+                                <h3 class="title_36 title_reg">
+                                    Responsive<br>
+                                    Website
+                                </h3>
+                                <p class="text_20 pc_nun">(02/06)</p>
+                            </div>
+                            <div class="pro_certer_box">
+                                <h2 class="title_50">
+                                    창신대학교 간호학과<br>
+                                    ‘생명의 소중함 알리기’ 
+                                </h2>
+                                <div class="mo_pro_ali">
+                                    <p class="text_20 ailgn">
+                                        반응형 웹사이트<br>
+                                        사용 스킬 : HTML:5, CSS3, Bootstrap<br>
+                                        제작 기간 : 7일 (2022.02.15~02.21)<br>
+                                        제작 인원 : 3명<br>
+                                        담당 파트 : 사이트 구조 설계 및 사이트 구축
+                                    </p>
+                                    <div class="mo_wrap">
+                                        <p class="text_20 pc_text">
+                                            창신대학교 간호학과의 ‘생명의 소중함 알리기‘를 진행한 웹툰과<br>
+                                            애니메이션 소개 안내 반응형 웹사이트 제작. 
+                                        </p>
+                                        <p class="text_20 mo_text">
+                                            창신대 간호학과의 ‘생명의 소중함 알리기’ 웹툰·애니메이션 소개 반응형 웹사이트 제작. 
+                                        </p>
+                                        <div class="but_wrap">
+                                            <button class="but ski_but prepbut" onclick="window.open('#','_self')">기술서</button>
+                                            <button class="but exi_but" onclick="window.open('#','_self')">기존사이트</button>
+                                            <button class="but web_but" onclick="cli_web_chan()">리뉴얼사이트</button>
+                                        </div>
+                                        <p class="text_20 mo_nun">(01/06)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pro_right_box">
+                                <img src="./img/changsin.png" alt="창신대 메인화면" id="mo_chan_img">
+                            </div>
+                        </div>
+
+                        <!-- 사복과 작업 영역 -->
+                        <div class="pro_smi_box smi_cr">
+                            <div class="pro_left_box">
+                                <div class="left_title_box">
+                                    <h3 class="title_36">
+                                        <b class="point_blue">2022</b> Work<br>
+                                        Career Project
+                                    </h3>
+                                </div>
+                                <h3 class="title_36 title_reg">
+                                     Pc Website
+                                </h3>
+                                <p class="text_20 pc_nun">(03/06)</p>
+                            </div>
+                            <div class="pro_certer_box">
+                                <h2 class="title_50">
+                                    부산경상대학교 사회복지<br>
+                                    아동보육과 메인홈 리뉴얼
+                                </h2>
+                                <div class="mo_pro_ali">
+                                    <p class="text_20 ailgn">
+                                        반응형 웹사이트<br>
+                                        사용 스킬 : HTML:5, CSS3, Bootstrap<br>
+                                        제작 기간 : 4일 (2022.09.05~09.09)<br>
+                                        제작 인원 : 3명<br>
+                                        담당 파트 : 사이트 구조 설계 및 사이트 구축
+                                    </p>
+                                    <div class="mo_wrap">
+                                        <p class="text_20 pc_text">
+                                            2023학년도 입시 관련 부산경상대학교 사회복지아동보육과<br>
+                                            메인 홈페이지 리뉴얼 진행. 
+                                        </p>
+                                        <p class="text_20 mo_text">
+                                            2023학년도 입시 부산경상대학교 사회복지아동보육과 메인홈 리뉴얼 진행. 
+                                        </p>
+                                        <div class="but_wrap">
+                                            <button class="but ski_but prepbut" onclick="window.open('#','_self')">기술서</button>
+                                            <button class="but exi_but" onclick="window.open('#','_self')">기존사이트</button>
+                                            <button class="but web_but" onclick="cli_web_soci()">리뉴얼사이트</button>
+                                        </div>
+                                        <p class="text_20 mo_nun">(03/06)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pro_right_box">
+                                <img src="./img/social.png" alt="부산경상대 사복과 메인화면" id="mo_soci_img">
+                            </div>
+                        </div>
+
+                        <!-- 유교과 작업 영역 -->
+                        <div class="pro_smi_box smi_cr">
+                            <div class="pro_left_box">
+                                <div class="left_title_box">
+                                    <h3 class="title_36">
+                                        <b class="point_blue">2022</b> Work<br>
+                                        Career Project
+                                    </h3>
+                                </div>
+                                <h3 class="title_36 title_reg">
+                                    Pc Website
+                                </h3>
+                                <p class="text_20 pc_nun">(04/06)</p>
+                            </div>
+                            <div class="pro_certer_box">
+                                <h2 class="title_50">
+                                    부산경상대학교 유아교육과<br>
+                                    메인홈 리뉴얼
+                                </h2>
+                                <div class="mo_pro_ali">
+                                    <p class="text_20 ailgn">
+                                        반응형 웹사이트<br>
+                                        사용 스킬 : HTML:5, CSS3, Bootstrap<br>
+                                        제작 기간 : 4일 (2022.09.05~09.09)<br>
+                                        제작 인원 : 3명<br>
+                                        담당 파트 : 사이트 구조 설계 및 사이트 구축
+                                    </p>
+                                    <div class="mo_wrap">
+                                        <p class="text_20 pc_text">
+                                            2023학년도 입시 관련 부산경상대학교 유아교육과 메인 홈페이지<br>
+                                            리뉴얼 진행. 
+                                        </p>
+                                        <p class="text_20 mo_text">
+                                            2023학년도 입시 부산경상대학교 유아교육과 메인홈 리뉴얼 진행. 
+                                        </p>
+                                        <div class="but_wrap">
+                                            <button class="but ski_but prepbut" onclick="window.open('#','_self')">기술서</button>
+                                            <button class="but exi_but" onclick="window.open('#','_self')">기존사이트</button>
+                                            <button class="but web_but" onclick="cli_web_yoou()">리뉴얼사이트</button>
+                                        </div>
+                                        <p class="text_20 mo_nun">(04/06)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pro_right_box">
+                                <img src="./img/social.png" alt="부산경상대 유교과 메인화면" id="mo_yoou_img">
+                            </div>
+                        </div>
+
+                        <!-- 웹애니과 작업 영역 -->
+                        <div class="pro_smi_box smi_cr">
+                            <div class="pro_left_box">
+                                <div class="left_title_box">
+                                    <h3 class="title_36">
+                                        <b class="point_blue">2024</b> Work<br>
+                                        Career Project
+                                    </h3>
+                                </div>
+                                <h3 class="title_36 title_reg">
+                                    Mobile
+                                </h3>
+                                <p class="text_20 pc_nun">(05/06)</p>
+                            </div>
+                            <div class="pro_certer_box">
+                                <h2 class="title_50">
+                                    부산경상대학교 웹툰<br>
+                                    애니메이션과 모바일 사이트
+                                </h2>
+                                <div class="mo_pro_ali">
+                                    <p class="text_20 ailgn">
+                                        반응형 웹사이트<br>
+                                        사용 스킬 : HTML:5, CSS3, Bootstrap<br>
+                                        제작 기간 : 3일 (2024.09.09~09.11)<br>
+                                        제작 인원 : 2명<br>
+                                        담당 파트 : 사이트 구조 설계 및 사이트 구축
+                                    </p>
+                                    <div class="mo_wrap">
+                                        <p class="text_20 pc_text">
+                                            2025학년도 입시 관련 부산경상대학교 웹툰애니메이션과<br>
+                                            모바일 사이트 제작 진행.
+                                        </p>
+                                        <p class="text_20 mo_text">
+                                            2025학년도 입시 부산경상대학교 웹툰애니메이션과 모바일 사이트 제작. 
+                                        </p>
+                                        <div class="but_wrap">
+                                            <button class="but ski_but prepbut" onclick="window.open('#','_self')">기술서</button>
+                                            <button class="but exi_but" onclick="window.open('#','_self')">기존사이트</button>
+                                            <button class="but web_but" onclick="cli_web_mo_web()">리뉴얼사이트</button>
+                                        </div>
+                                        <p class="text_20 mo_nun">(05/06)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pro_right_box mo_con">
+                                <img src="./img/mo_webtoon.png" alt="부산경상대 웹툰과 모바일화면">
+                            </div>
+                        </div>
+
+                        <!-- 크리과 작업 영역 -->
+                        <div class="pro_smi_box smi_cr">
+                            <div class="pro_left_box">
+                                <div class="left_title_box">
+                                    <h3 class="title_36">
+                                        <b class="point_blue">2024</b> Work<br>
+                                        Career Project
+                                    </h3>
+                                </div>
+                                <h3 class="title_36 title_reg">
+                                    Mobile
+                                </h3>
+                                <p class="text_20 pc_nun">(06/06)</p>
+                            </div>
+                            <div class="pro_certer_box">
+                                <h2 class="title_50">
+                                    부산경상대학교 디지털<br>
+                                    크리에이터과 모바일 사이트
+                                </h2>
+                                <div class="mo_pro_ali">
+                                    <p class="text_20 ailgn">
+                                        반응형 웹사이트<br>
+                                        사용 스킬 : HTML:5, CSS3, Bootstrap<br>
+                                        제작 기간 : 3일 (2024.09.09~09.11)<br>
+                                        제작 인원 : 2명<br>
+                                        담당 파트 : 사이트 구조 설계 및 사이트 구축
+                                    </p>
+                                    <div class="mo_wrap">
+                                        <p class="text_20 pc_text">
+                                        2025학년도 입시 관련 부산경상대학교 디지털크리에이터과<br>
+                                        모바일 사이트 제작 진행.
+                                    </p>
+                                    <p class="text_20 mo_text">
+                                        2025학년도 입시 부산경상대학교 디지털크리에이터과 모바일 사이트 제작. 
+                                    </p>
+                                    <div class="but_wrap">
+                                        <button class="but ski_but prepbut" onclick="window.open('#','_self')">기술서</button>
+                                        <button class="but exi_but" onclick="window.open('#','_self')">기존사이트</button>
+                                        <button class="but web_but" onclick="cli_web_mo_cre()">리뉴얼사이트</button>
+                                    </div>
+                                    <p class="text_20 mo_nun">(06/06)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pro_right_box mo_con">
+                                <img src="./img/mo_creator.png" alt="부산경상대 크리과 모바일화면">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <button class="move_but left_but cr_but cr_le">
+                <img src="./img/left_but.png" alt="왼쪽이동버튼">
+            </button>
+            <button class="move_but right_but cr_but cr_rig">
+                <img src="./img/right_but.png" alt="오른쪽이동버튼">
+            </button>
+        </section>
+
+        <!-- 푸터 영역 -->
+        <footer class="page contact_page scroll_page" id="contact_page">
+            <article class="width_align contact_box in_page">
+                <h3 class="title_36">Contact</h3>
+                <div class="cont_sub_box">
+                    <div class="cont_box left_box">
+                        <div class="le_top">
+                            <p class="text_24 tet_ali">NAME</p>
+                            <P class="text_24 cont_reg">이다교  |  LeeDaKyo</P>
+                        </div>
+                        <div class="le_down">
+                            <p class="text_24 tet_ali">ADDITIONAI CONTACTS</p>
+                            <div class="cont_img_box">
+                                <img src="./img/Inst_qr.png" alt="인스타그램qr코드" onclick="inst_qr()">
+                                <img src="./img/Kakao_qr.png" alt="카카오톡qr코드" onclick="kakao_qr()">
+                            </div>
+                        </div>
+                        </div>
+                        <div class="cont_box center_box">
+                            <div class="le_top">
+                                <p class="text_24 tet_ali">EMAIL</p>
+                                <P class="text_24 cont_reg">qmffn2154@naver.com</P>
+                            </div>
+                            <div class="le_down">
+                                <p class="text_24 tet_ali">PORTFOLIO</p>
+                                <P class="text_24 cont_reg">https://ssamsweb.com/250522/ldk</P>
+                                <div class="por_but but_wrap">
+                                    <button class="but plan_but" onclick="window.open('./pdf/portfolio_plan.pdf','_blank')">기획서</button>
+                                    <button class="but skill_but prepbut" onclick="window.open('#','_self')">기술서</button>
+                                    <button class="but his_but" onclick="window.open('./pdf/portfolio_resume.pdf','_blank')">이력서</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cont_box right_box">
+                            <img src="./img/giphy.gif" alt="블랙홀움짤">
+                        </div>
+                </div>
+                <div class="copt_right">
+                    <p class="text_14 cont_reg">
+                        본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.<br>
+                        <b>ⓒ 2025 Lee, Da-Kyo. All Rights Reserved. “블랙홀”.</b>
+                    </p>
+                    <p class="text_14">
+                        <a href="https://www.flaticon.com/kr/free-icon/black-hole_80654" title="우주 아이콘" target="_self">메뉴 버튼 출처 - 우주 아이콘 제작자: Freepik - Flaticon</a>
+                        <a href="https://giphy.com/gifs/void-black-hole-blackhole-PkKzNQjwPy7GvxZbfe" title="블랙홀" target="_self">Contact 움짤 출처 - [GIPHY] xponentialdesign</a>
+                    </p>
+                </div>
+            </article>
+        </footer>
+
+        <!-- 스크롤 이벤트 및 메뉴바 js  -->
+        <script src="./js/sen.js"></script>
+    </div>
+    <script src="./js/pro_move.js" defer></script>
 </body>
 </html>
